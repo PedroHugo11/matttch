@@ -39,7 +39,7 @@
     <!--====== PRELOADER PART ENDS ======-->
 
     <!--====== HEADER PART START ======-->
-    <header class="header_area">
+    <div class="header_area">
         <div class="header_navbar">
             <div class="container">
                 <div class="row">
@@ -108,8 +108,7 @@
 
             <div class="container ">
                 <div class="row align-items-center">
-                    <div class="d-flex justify-content-center align-items-center  ">
-
+                    <div class="d-flex justify-content-center align-items-center">
                         <section class="vh-100">
                             <div class="container py-5 h-100">
                                 <div class="row d-flex justify-content-center align-items-center h-100">
@@ -118,27 +117,31 @@
                                             <div class="row g-0">
                                                 <div class="col-md-6 col-lg-5 d-none d-md-block">
                                                     <img src="https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
-                                                         alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                                                         alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; height: 97%;" />
                                                 </div>
                                                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                                     <div class="card-body p-4 p-lg-5 text-black">
 
-                                                        <form>
+                                                        <form method="post" action="php/authenticate/logar.php">
 
                                                             <h5 class="fw-normal mb-3 pb-1" style="letter-spacing: 1px; font-size: 15px;">Entre com sua conta!</h5>
-
+                                                            <?php 
+                                                                if (isset($_SESSION['login_msg'])) {
+                                                                    echo $_SESSION['login_msg'];
+                                                                }
+                                                            ?>
                                                             <div class="form-outline mb-1">
-                                                                <input type="email" id="idEmail" class="form-control form-control-sm" style="height: 30px;" required />
+                                                                <input type="email" id="idEmail" name="email" class="form-control form-control-sm" style="height: 30px;" required />
                                                                 <label class="form-label" for="idEmail" style="font-size: 15px;">Email</label>
                                                             </div>
 
                                                             <div class="form-outline mb-1">
-                                                                <input type="password" id="idSenha" class="form-control form-control-sm" style="height: 30px;" required />
+                                                                <input type="password" id="idSenha" name="senha" class="form-control form-control-sm" style="height: 30px;" required />
                                                                 <label class="form-label" for="idSenha" style="font-size: 15px;">Senha</label>
                                                             </div>
 
                                                             <div class="pt-1 mb-1">
-                                                                <button class="btn btn-dark btn-sm btn-block" type="submit" style="weight: 50px;">Login</button>
+                                                                <button class="btn btn-dark btn-sm btn-block" type="submit" name="login-button" style="weight: 50px;">Login</button>
                                                             </div>
 
                                                             <a class="small text-muted" href="#!" style="font-size: 13px;">Esqueceu a senha?</a>

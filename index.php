@@ -48,7 +48,7 @@
     <!--====== PRELOADER PART ENDS ======-->
 
     <!--====== HEADER PART START ======-->
-    <header class="header_area">
+    <div class="header_area">
         <div class="header_navbar">
             <div class="container">
                 <div class="row">
@@ -72,7 +72,7 @@
                                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="--bs-scroll-height: 100px;">
                 
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="index.html">Home</a>
+                                        <a class="nav-link" href="index.php">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link page-scroll" href="#about">Sobre</a>
@@ -93,10 +93,10 @@
                                 <div class="d-flex" >
                                     <!-- Header Button Start -->
                                     <div class="button" style="margin-left: 0px;">
-                                        <a href="login.html" class="main-btn mouse-hover">Login<span></span></a>
+                                        <a href="login.php" class="main-btn mouse-hover">Login<span></span></a>
                                     </div>
                                     <div class="button" style="margin-left: 0px;">
-                                        <a href="register.html" class="main-btn mouse-hover">Registrar<span></span></a>
+                                        <a href="register.php" class="main-btn mouse-hover">Registrar<span></span></a>
                                     </div>
                                     <!-- Header Button End -->
                                 </div>
@@ -135,8 +135,8 @@
                             </div>
                             
                             <div class="hero-btn">
-                                <a href="register.html" class="main-btn mouse-hover btn-inline wow fadeInUp" data-wow-delay=".8s">Quero uma tattoo nova<span></span></a>
-                                <a href="register.html" class="main-btn mouse-hover btn-inline btn-white wow fadeInUp" data-wow-delay=".8s">Quero tatuar mais pessoas<span></span>
+                                <a href="register.php" class="main-btn mouse-hover btn-inline wow fadeInUp" data-wow-delay=".8s">Quero uma tattoo nova<span></span></a>
+                                <a href="register.php" class="main-btn mouse-hover btn-inline btn-white wow fadeInUp" data-wow-delay=".8s">Quero tatuar mais pessoas<span></span>
                                 </a>
                             </div>
                         </div>
@@ -153,7 +153,7 @@
             <!-- Hero Area Image End-->
         </div>
         <!-- Hero Area End -->
-    </header>
+    </div>
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== ABOUT US PART START ======-->
